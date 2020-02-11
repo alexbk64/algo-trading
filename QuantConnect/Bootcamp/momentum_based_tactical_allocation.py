@@ -46,7 +46,7 @@ class MomentumBasedTacticalAllocation(QCAlgorithm):
         #if SPY has more upward momentum than BND, then liquidate all holdings in BND and allocate 100% of equity to SPY
         if self.spyMomentum.Current.Value > self.bondMomentum.Current.Value:
             self.Liquidate(bnd.symbol)
-            self.SetHoldings("SPY", 1) SetHoldings method automatically calculates the number of asset units to purchase according to the fraction of the portfolio value provided.
+            self.SetHoldings("SPY", 1) #SetHoldings method automatically calculates the number of asset units to purchase according to the fraction of the portfolio value provided.
         #otherwise, liquidate all SPY holdings and allocate 100% of portfolio to BND
         else:
             self.Liquidate("SPY")
