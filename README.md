@@ -1,2 +1,2 @@
 # algo-trading
-A range of different quant trading strategies written in Python
+A range of different trading strategies written in Python
