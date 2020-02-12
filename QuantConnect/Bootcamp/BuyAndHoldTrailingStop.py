@@ -11,6 +11,11 @@ from QuantConnect.Data.Market import *
 from QuantConnect.Orders import *
 from datetime import datetime
 
+###<summary>
+### A simple buy-and-hold strategy, which uses a dynamically updated stop loss to manage risk in the orders.
+### Also plots price and stop levels on a single chart for illustration.
+###</summary>
+
 class BuyAndHoldTrailingStop(QCAlgorithm):
     
     # Order ticket for our stop order, Datetime when stop order was last hit
