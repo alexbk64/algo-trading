@@ -11,6 +11,11 @@ from QuantConnect.Data.Market import *
 from QuantConnect.Orders import *
 from datetime import datetime
 
+###<summary>
+### Shifting capital between the S&P500 and a Bond ETF. Working with a portfolio with multiple assets 
+### and using a momentum indicator to implement a tactical asset allocation strategy.
+###</summary>
+
 class MomentumBasedTacticalAllocation(QCAlgorithm):
     
     def Initialize(self):
